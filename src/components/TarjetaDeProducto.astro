@@ -1,5 +1,20 @@
+---
+interface Props {
+ // la estructura de los datos
+ title: string
+ price: number
+ img: string
+}
+
+const {title, price, img} = Astro.props
+---
+  
+
+
+
+
 <div>
-    <img src="" alt="">
-    <p>nombre del producto</p>
-    <p>precio del producto</p>
+    <img src={img} alt="">
+    <p>{title}</p>
+    <p>{price}$</p>
 </div>
