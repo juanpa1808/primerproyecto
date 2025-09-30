@@ -1,20 +1,16 @@
 ---
 interface Props {
- // la estructura de los datos
- title: string
- price: number
- img: string
+    // la estructura de los datos
+    title: string;
+    price: number;
+    img: string;
 }
 
-const {title, price, img} = Astro.props
+const { title, price, img } = Astro.props;
 ---
-  
-
-
-
 
 <div>
-    <img src={img} alt="">
+    <img src={img} alt="" />
     <p>{title}</p>
     <p>{price}$</p>
 </div>
