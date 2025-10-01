@@ -1,15 +1,41 @@
 ---
-import TarjetaDeProducto from "../components/TarjetaDeProducto.astro"
-import Layout from "../layouts/Layout.astro"
+import TarjetaDeProducto from "../components/TarjetaDeProducto.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-
 <Layout>
-    COMPRAR
-    <TarjetaDeProducto title="Silla Gamer Asus Greenflax" price={166.99} img="sillagamer.webp"/>
-    <TarjetaDeProducto title="Auriculares Razer Blackshark v2X" price={85.99} img="auriculares.png"/>
-    <TarjetaDeProducto title="Telefono Gamer Redmagic 10pro" price={859.99} img="redmagic.jpg"/>
-    <TarjetaDeProducto title="Teclado Archytus v5" price={348.99} img="ornatav3gosss.jpg"/>
-    <TarjetaDeProducto title="Raton Logictech G502" price={479.99} img="logimause.webp"/>
-    <TarjetaDeProducto title="Teclado Unitron v4" price={165.66} img="RazerBlackWidow.jpg"/>
+    <div>
+        COMPRAR
+        <TarjetaDeProducto
+            title="Silla Gamer Asus Greenflax"
+            price={166.99}
+            img="sillagamer.webp"
+        />
+        <TarjetaDeProducto
+            title="Auriculares Razer Blackshark v2X"
+            price={85.99}
+            img="auriculares.png"
+        />
+        <TarjetaDeProducto
+            title="Telefono Gamer Redmagic 10pro"
+            price={859.99}
+            img="redmagic.jpg"
+        />
+        <TarjetaDeProducto
+            title="Teclado Archytus v5"
+            price={348.99}
+            img="ornatav3gosss.jpg"
+        />
+        <TarjetaDeProducto
+            title="Raton Logictech G502"
+            price={479.99}
+            img="logimause.webp"
+        />
+        <TarjetaDeProducto
+            title="Teclado Unitron v4"
+            price={165.66}
+            img="RazerBlackWidow.jpg"
+        />
+    </div>
+    <Layout />
 </Layout>

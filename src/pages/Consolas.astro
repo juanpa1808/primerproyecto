@@ -2,12 +2,39 @@
 import TarjetaDeProducto from "../components/TarjetaDeProducto.astro";
 import Layout from "../layouts/Layout.astro";
 ---
+
 <Layout>
-    CONSOLAS
-    <TarjetaDeProducto title="Nintendo Switch 2" price={750.99} img="nintendoSwitch2.png"/>
-    <TarjetaDeProducto title="Nintendo Switch Oled" price={450.90} img="nintendoSwitchOled.png"/>
-    <TarjetaDeProducto title="Xbox Series X" price={680.99} img="XboxSeriesX.png"/>
-    <TarjetaDeProducto title="Xbox Series S" price={350} img="XboxSeriesS.png"/>
-    <TarjetaDeProducto title="Playstation 5 Digital Versión Spiderman 2" price={700.99} img="ps5spiderman.png"/>
-    <TarjetaDeProducto title="Playstation 5 Versión Estándar" price={680.99} img="ps5.png"/>
+    <div>
+        CONSOLAS
+        <TarjetaDeProducto
+            title="Nintendo Switch 2"
+            price={750.99}
+            img="nintendoSwitch2.png"
+        />
+        <TarjetaDeProducto
+            title="Nintendo Switch Oled"
+            price={450.9}
+            img="nintendoSwitchOled.png"
+        />
+        <TarjetaDeProducto
+            title="Xbox Series X"
+            price={680.99}
+            img="XboxSeriesX.png"
+        />
+        <TarjetaDeProducto
+            title="Xbox Series S"
+            price={350}
+            img="XboxSeriesS.png"
+        />
+        <TarjetaDeProducto
+            title="Playstation 5 Digital Versión Spiderman 2"
+            price={700.99}
+            img="ps5spiderman.png"
+        />
+        <TarjetaDeProducto
+            title="Playstation 5 Versión Estándar"
+            price={680.99}
+            img="ps5.png"
+        />
+    </div>
 </Layout>
