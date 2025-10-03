@@ -3,9 +3,10 @@ import TarjetaDeProducto from "../components/TarjetaDeProducto.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
+<Layout>      
+    <h1 class="ordenadores">ORDENADORES</h1>
     <div>
-        ORDENADORES
+  
         <TarjetaDeProducto
             title="Portátil Asus Greenflax v67"
             price={1356.99}
@@ -38,3 +39,17 @@ import Layout from "../layouts/Layout.astro";
         />
     </div>
 </Layout>
+<style>
+    div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        gap: 20px;
+        padding: 20px 60px;
+        
+    }
+
+    .ordenadores{
+        padding: 20px 60px;
+    }
+    
+</style>

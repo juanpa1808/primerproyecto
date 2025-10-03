@@ -3,9 +3,9 @@ import TarjetaDeProducto from "../components/TarjetaDeProducto.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
+<Layout>  
+    <h1 class="comprar">COMPRAR</h1>
     <div>
-        COMPRAR
         <TarjetaDeProducto
             title="Silla Gamer Asus Greenflax"
             price={166.99}
@@ -37,5 +37,18 @@ import Layout from "../layouts/Layout.astro";
             img="RazerBlackWidow.jpg"
         />
     </div>
-    <Layout />
 </Layout>
+<style>
+    div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        gap: 20px;
+        padding: 20px 60px;
+        
+    }
+
+    .comprar{
+        padding: 20px 60px;
+    }
+
+</style>

@@ -3,8 +3,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
+    <h1 class="marcas">MARCAS</h1>
     <div>
-        MARCAS AUTORIZADAS
+       
         <div>
             <img src="/lagarto.png" alt="lagarto" />
             <p>
@@ -46,3 +47,16 @@ import Layout from "../layouts/Layout.astro";
         </div>
     </div>
 </Layout>
+<style>
+    div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        gap: 20px;
+        padding: 20px 60px;
+        
+    }
+
+    .marcas{
+        padding: 20px 60px;
+    }
+</style>

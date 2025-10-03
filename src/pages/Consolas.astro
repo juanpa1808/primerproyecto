@@ -4,8 +4,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
+    <h1 class="consolas">CONSOLAS</h1>
     <div>
-        CONSOLAS
+        
         <TarjetaDeProducto
             title="Nintendo Switch 2"
             price={750.99}
@@ -38,3 +39,17 @@ import Layout from "../layouts/Layout.astro";
         />
     </div>
 </Layout>
+<style>
+    div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        gap: 20px;
+        padding: 20px 60px;
+        
+    }
+
+    .consolas{
+        padding: 20px 60px;
+    }
+    
+</style>

@@ -1,28 +1,49 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <Layout>
     <div>
         <div>
-            <h1>SOPORTE</h1>
+            <h1 class="support">SOPORTE</h1>
             <div>
                 <button>
-                    <img src="" alt="" />
+                    <Icon name="lupa" />
                 </button>
             </div>
+            <Icon name="soportelogo" />
         </div>
         <div>
-            <h1>DISTRIBUIDORES AUTORIZADOS</h1>
-            <img src="/cdworld.png" alt="a" />
-            <img src="/diggit.png" alt="b" />
-            <img src="/gamingpoint.png" alt="c" />
-            <img src="/gezatech.png" alt="d" />
-            <img src="/gn.png" alt="e" />
-            <img src="/juegosX.png" alt="f" />
-            <img src="/malditohard.png" alt="g" />
-            <img src="/mercadolibre.png" alt="h" />
-            <img src="/tecnofullshop.png" alt="pg" />
+            <h1 class="distribuidores">DISTRIBUIDORES AUTORIZADOS</h1>
+            <div class="sponsors">
+                <img src="/cdworld.png" alt="a" />
+                <img src="/diggit.png" alt="b" />
+                <img src="/gamingpoint.png" alt="c" />
+                <img src="/gezatech.png" alt="d" />
+                <img src="/gn.png" alt="e" />
+                <img src="/juegosX.png" alt="f" />
+                <img src="/malditohard.png" alt="g" />
+                <img src="/mercadolibre.png" alt="h" />
+                <img src="/tecnofullshop.png" alt="pg" />
+            </div>
         </div>
     </div>
 </Layout>
+
+<style>
+    .sponsors {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+        padding: 20px 60px;
+    }
+    .support{
+        display: flex;
+        padding: 20px 60px;
+    }
+    .distribuidores{
+        display flex: ;
+        padding: 20px 60px;
+    }
+</style>

@@ -4,8 +4,8 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
+    <h1 class="auriculares">AURICULARES</h1> 
     <div>
-       AURICULARES
         <TarjetaDeProducto
             title="Auriculares Razer Kitty Kraken"
             price={60.99}
@@ -42,5 +42,12 @@ import Layout from "../layouts/Layout.astro";
     div{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        gap: 20px;
+        padding: 20px 60px;
+        
+    }
+
+    .auriculares{
+        padding: 20px 60px;
     }
 </style>
