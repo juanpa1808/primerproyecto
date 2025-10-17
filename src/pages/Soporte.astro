@@ -4,19 +4,21 @@ import { Icon } from "astro-icon/components";
 ---
 
 <Layout>
-    <div>
-        <div>
-            <h1 class="support">SOPORTE</h1>
+    <div class="border-1 border-blue-800 grid grid-cols-2 gap-60 p-25 items-center">
+        <div class="border border-blue-800 py-20 rounded-md ">
+            <h1 class="support text-4xl font-extrabold">SOPORTE</h1>
             <div>
-                <button>
-                    <Icon name="lupa" />
+                <button class="flex items-center gap-2 border rounded-full p-2 w-130 hover:bg-blue-800 hover:text-white transition">
+                    <p class="justify-">Cuentanos Tu Problema...</p>
+                    <Icon name="lupa" class="px-"/>
                 </button>
             </div>
-            <Icon name="soportelogo" />
+            <Icon name="soportelogo" class="w-130 text-9xl" />
         </div>
-        <div>
-            <h1 class="distribuidores">DISTRIBUIDORES AUTORIZADOS</h1>
-            <div class="grid-cols-3 sponsors">
+
+        <div class="border border-blue-800 rounded-md ">
+            <h1 class="flex items-center distribuidores text-4xl font-extrabold ">DISTRIBUIDORES AUTORIZADOS</h1>
+            <div class="grid-cols-2 sponsors">
                 <img src="/cdworld.png" alt="a" />
                 <img src="/diggit.png" alt="b" />
                 <img src="/gamingpoint.png" alt="c" />
@@ -41,9 +43,13 @@ import { Icon } from "astro-icon/components";
     .support{
         display: flex;
         padding: 20px 60px;
+        font-size: 3rem;
+        text-shadow: 1cap 1px 2px rgba(255, 255, 255, 0.147);
     }
     .distribuidores{
         display flex: ;
         padding: 20px 60px;
+        font-size: 3rem;
+        text-shadow: 1cap 1px 2px rgba(255, 255, 255, 0.147);
     }
 </style>
