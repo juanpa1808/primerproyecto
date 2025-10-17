@@ -2,20 +2,36 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<footer>
-    <div>
-        <Icon name="x" />
-        <Icon name="logowhatsapp" />
-        <Icon name="logofacebook" />
-        <Icon name="logoinstagram" />
+<footer class="">
+    <div class="border p-3 rounded-full text-2xl gap-4">
+        <Icon name="x"/>
+        <Icon name="logowhatsapp" class="text-green-500"/>
+        <Icon name="logofacebook" class="text-blue-700"/>
+        <Icon name="logoinstagram" class="text-pink-800"/>
         <p>
          breaded08@gmail.com
         </p>
     </div>
-    <div>
-        <Icon name="llamada" />
+    <div class="border p-3 rounded-full text-2xl gap-4">
+        <Icon name="llamada" class="text-amber-300"/>
         <p>
          0412-5033798 0212-8765454
         </p>
     </div>
 </footer>
+
+<style> 
+
+footer{
+display: flex;
+padding: 30px 60px;
+gap: 60px;
+justify-content: center;
+
+}
+
+div{
+    display: flex;
+    align-items: center;
+}
+</style>

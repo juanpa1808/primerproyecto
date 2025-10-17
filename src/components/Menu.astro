@@ -5,21 +5,21 @@ import { Icon } from "astro-icon/components";
 <header>
     <nav>
         <div>
-            <img src="/LogoPagina2.png" alt="logopagina" />
+            <img class="rounded-md py-1" src="/LogoPagina2.png" alt="logopagina" />
     
-            <ul>
-                <li><a href="/">inicio</a></li>
-                <li><a href="/Auriculares">AURICULARES</a></li>
-                <li><a href="/Consolas">CONSOLAS</a></li>
-                <li><a href="/Ordenadores">ORDENADORES</a></li>
-                <li><a href="/Controles">CONTROLES</a></li>
-                <li><a href="/Marcas">MARCAS</a></li>
-                <li><a href="/Comprar">COMPRAR</a></li>
-                <li><a href="/Soporte">SOPORTE</a></li>
+            <ul class="">
+                <li class="hover:scale-110 duration-300"><a href="/">INICIO</a></li>
+                <li class="hover:scale-110 duration-300"><a href="/Auriculares">AURICULARES</a></li>
+                <li class="hover:scale-110 duration-300"><a href="/Consolas">CONSOLAS</a></li>
+                <li class="hover:scale-110 duration-300"><a href="/Ordenadores">ORDENADORES</a></li>
+                <li class="hover:scale-110 duration-300"><a href="/Controles">CONTROLES</a></li>
+                <li class="hover:scale-110 duration-300"><a href="/Marcas">MARCAS</a></li>
+                <li class="hover:scale-110 duration-300"><a href="/Comprar">COMPRAR</a></li>
+                <li class="hover:scale-110 duration-300"><a href="/Soporte">SOPORTE</a></li>
             </ul>
         </div>
 
-        <button>
+        <button class=" p-2 rounded-md hover:scale-150 duration-300 cursor-pointer bg-gray-900  ">
             <Icon name="lupa" />
         </button>
     </nav>
@@ -32,6 +32,7 @@ import { Icon } from "astro-icon/components";
         align-items: center;
         justify-content: space-between;
         background-color: rgb(57, 25, 145);
+        justify-content: center;
     }
     div {
         display: flex;
@@ -39,14 +40,14 @@ import { Icon } from "astro-icon/components";
     }
 
     img {
-        width: 56px;
+        width: 70px;
     }
 
     ul {
         display: flex;
-        gap: 40px;
-        font-weight: 500;
-        padding: 10px;
+        gap: 50px;
+        font-weight: 800;
+        padding: 20px;
     }
 
 </style>
