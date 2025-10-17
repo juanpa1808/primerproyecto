@@ -12,7 +12,8 @@ const { title, price, img } = Astro.props;
 <div class="border-gray-900 p-4 rounded-lg hover:scale-105 duration-300 cursor-pointer bg-gray-900  ">
     <img class="rounded-lg" src={img} alt="" />
     <p class="py-4">{title}</p>
-    <p class="text-green-600">{price}$</p>
+    <p class="text-green-600 py-5">{price}$</p>
+    <p class=" rounded-md py-2 px-3 w-22 hover: bg-green-600  ">Comprar</p>
 </div>
 
 
