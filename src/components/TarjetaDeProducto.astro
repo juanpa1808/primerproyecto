@@ -9,10 +9,10 @@ interface Props {
 const { title, price, img } = Astro.props;
 ---
 
-<div>
+<div class="border p-4 rounded-lg hover:scale-105 duration-300 cursor-pointer bg-">
     <img src={img} alt="" />
     <p>{title}</p>
-    <p>{price}$</p>
+    <p class="text-red-600">{price}$</p>
 </div>
  <style>
     img{
